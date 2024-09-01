@@ -1,0 +1,14 @@
+[versions]
+agp = "8.6.0"
+refine = "4.4.0"
+hiddenapi = "4.3.3"
+
+[libraries]
+hidden-stub = { group = "dev.rikka.hidden", name = "stub", version.ref = "hiddenapi" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+refine = { id = "dev.rikka.tools.refine", version.ref = "refine" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
